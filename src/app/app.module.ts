@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { LucideAngularModule, icons } from 'lucide-angular';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LucideAngularModule.pick(icons)
   ],
   providers: [],
   bootstrap: [AppComponent]
